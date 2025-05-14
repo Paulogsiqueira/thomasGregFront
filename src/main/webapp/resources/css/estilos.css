@@ -1,0 +1,222 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background-container-home {
+    background: url("#{resource['img/background.jpg']}") center / cover no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40%;
+    min-width: 300px;
+    max-width: 650px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem 4rem 1rem;
+    border-radius: 10px;
+    color: #4f4f4f;
+    font-size: 80%
+}
+
+.custom-messages .ui-messages-error {
+    background-color: #ffe6e6;
+    border-color: #ff9999;
+    color: #cc0000;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.custom-messages .ui-messages-error-summary {
+    font-weight: bold;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.login-field {
+    margin-bottom: 1rem;
+}
+
+.home-button {
+    cursor: pointer;
+    text-align: center;
+    background-color: #428f2d;
+    font-weight: bold;
+    color: #4f4f4f;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+    height: 3rem;
+    font-size: 18px;
+}
+
+.form-client {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.form-add-cliente {
+    display: flex;
+    justify-content: center;
+}
+
+.background-container {
+    background: url("#{resource['img/background.jpg']}") center / cover no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.credentials-instruction {
+    color: #666;
+    margin: 20px 0 10px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.credentials-box {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.credential-item {
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #444;
+}
+
+.credential-item:before {
+    content: "•";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.form-group {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-file {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.dialog-responsive .ui-dialog-content {
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+}
+.form-responsive {
+    max-width: 100%;
+}
+
+.form-responsive .ui-fileupload {
+    width: 100% !important;
+}
+
+.dialog-responsive.ui-dialog {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+    max-width: 90vw !important;
+    width: 90vw !important;
+}
+
+@media (max-width: 768px) {
+    .dialog-responsive.ui-dialog {
+        max-width: 700px !important;
+        width: 80% !important;
+    }
+
+    .logradouro-column{
+        display: none;
+    }
+
+    #formEditarLogradouro .ui-panelgrid-cell,
+    #formNovoLogradouro .ui-panelgrid-cell {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    #formEditarLogradouro .ui-panelgrid tr,
+    #formNovoLogradouro .ui-panelgrid tr {
+        margin-bottom: 15px;
+    }
+
+    #formEditarLogradouro .ui-inputtext,
+    #formNovoLogradouro .ui-inputtext {
+        width: 100% !important;
+    }
+
+    #formEditarLogradouro .ui-button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .dialog-responsive .ui-dialog-content {
+        padding: 10px !important;
+    }
+
+    .dialog-responsive .ui-inputtext,
+    .dialog-responsive .ui-button {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+
+    .dialog-responsive .ui-panelgrid-cell {
+        padding: 5px !important;
+    }
+
+    #tabelaLogradouros {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
