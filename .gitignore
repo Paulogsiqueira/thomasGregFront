@@ -1,0 +1,9 @@
+# Diretórios de IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Diretório de build do Maven
+target/
+**/target/
